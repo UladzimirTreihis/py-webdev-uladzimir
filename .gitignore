@@ -1,0 +1,4 @@
+.sqlite
+.coverage
+__pycahce__
+.pytest_cache
