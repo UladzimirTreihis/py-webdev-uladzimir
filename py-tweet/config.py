@@ -13,7 +13,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_SUBJECT_PREFIX = '[Py-Tweet]'
     MAIL_SENDER = 'Py-Tweet Admin <webdeb.b.flask@gmail.com>'
-    SERVER_NAME = os.environ.get('SERVER_NAME') or 'webdevUladzimir.pythonanywhere.com'
+    SERVER_NAME = os.environ.get('SERVER_NAME')
 
     @staticmethod
     def init_app(app):
