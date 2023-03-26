@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from "_formhelpers.html" import render_field %}
+
+{% block page_content %}
+<div class="user">
+    <h2>User</h2>
+    <p>Username: {{user.username}}</p>
+    <p>Name: {{user.name}}</p>
+    <p>Surname: {{user.surname}}</p>
+
+</div>
+
+<h2>User's Posts</h2>
+{% for post in posts %}
+<div style="border: solid;">
+    <p>{{post.content}}</p>
+    <p>{{post.created_time}}</p>
+    <p>{{post.user_id}}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
