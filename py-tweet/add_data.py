@@ -1,6 +1,6 @@
 from app import db
 from app.models import Role, User, Post, Comment
-from py_tweet import app
+from py_tweet import app as application
 
 
 def add_data(db, Role, User, Post, Comment):
@@ -44,5 +44,5 @@ def add_data(db, Role, User, Post, Comment):
     return None
 
 
-with app.app_context():
+with application.app_context():
     add_data(db, Role, User, Post, Comment)
